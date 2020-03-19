@@ -104,7 +104,6 @@ a {
   text-decoration: none;
 }
 body {
-  white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
 }
