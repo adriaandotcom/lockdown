@@ -520,7 +520,11 @@
     <div class="popup" v-if="currentCountry">
       <a @click="currentCountry = null" class="close">&times;</a>
       <h1>{{ currentCountry.name }}</h1>
-      <p v-if="currentCountry.comment">{{ currentCountry.comment }}</p>
+      <p v-if="currentCountry.comment_nl">{{ currentCountry.comment_nl }}</p>
+      <p v-else-if="currentCountry.comment_en">
+        {{ currentCountry.comment_en }}
+      </p>
+      <p v-else-if="currentCountry.comment">{{ currentCountry.comment }}</p>
       <p v-if="currentCountry.link">
         <a :href="currentCountry.link" target="_blank">{{
           currentCountry.link
@@ -572,7 +576,7 @@ export default {
       const unkown = /unkown/gi.test(country.lockdown);
 
       if (yes) return "#1c4587";
-      if (mild) return "#6d9eeb";
+      if (mild) return "#e98980";
       if (no) return "#ea4335";
       if (unkown) return "#d9d9d9";
 

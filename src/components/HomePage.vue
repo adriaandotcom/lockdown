@@ -4,10 +4,10 @@
     <div class="legend">
       <ul>
         <li class="yes">Lockdown</li>
-        <li class="mild">Mild lockdown</li>
-        <li class="no">No lockdown</li>
-        <li class="unkown">Unkown</li>
-        <li class="no-eu">Outside EU</li>
+        <li class="mild">Milde lockdown</li>
+        <li class="no">Geen lockdown</li>
+        <li class="unkown">Niet bekend</li>
+        <li class="no-eu">Buiten EU</li>
       </ul>
     </div>
     <div class="link">
@@ -85,7 +85,7 @@ ul li.yes::before {
   background-color: #1c4587;
 }
 ul li.mild::before {
-  background-color: #6d9eeb;
+  background-color: #e98980;
 }
 ul li.no::before {
   background-color: #ea4335;
@@ -104,7 +104,6 @@ a {
   text-decoration: none;
 }
 body {
-  word-break: break-all;
   word-wrap: break-word;
 }
 </style>
