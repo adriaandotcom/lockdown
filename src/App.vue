@@ -11,6 +11,11 @@ export default {
   name: "App",
   components: {
     HomePage
+  },
+  created() {
+    console.info("Source code for this app can be found here:");
+    console.info("https://github.com/adriaanvanrossum/lockdown");
+    console.info("PRs welcome!");
   }
 };
 </script>

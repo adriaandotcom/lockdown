@@ -559,8 +559,22 @@
         Hoe denk je dat de Nederlandse ziekenhuizen omgaan met
         {{ formatNumber(netherlands.confirmed * 100) }} patienten?
       </p>
+
       <p class="footer">
-        * laatst geüpdatet op {{ formatDate(netherlands.updated) }} –
+        * laatst geüpdatet op {{ formatDate(netherlands.updated) }}
+        <br />
+        <a
+          href="https://github.com/adhambadr/corona-api?utm_source=waaromgeenlockdown.nl"
+          target="_blank"
+          >number source</a
+        >
+        &middot;
+        <a
+          href="https://necsi.edu/eliminating-covid-19-a-community-based-analysis?utm_source=waaromgeenlockdown.nl"
+          target="_blank"
+          >paper</a
+        >
+        &middot;
         <a
           href="https://www.endcoronavirus.org/?utm_source=waaromgeenlockdown.nl"
           target="_blank"
