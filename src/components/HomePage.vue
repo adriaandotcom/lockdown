@@ -44,13 +44,13 @@ export default {
 <style scoped>
 .legend {
   position: absolute;
-  top: 0.7rem;
-  left: 0.7rem;
+  bottom: 1.7rem;
+  left: 1.7rem;
 }
 .link {
   position: absolute;
-  bottom: 0.7rem;
-  right: 1rem;
+  bottom: 1.3rem;
+  right: 1.7rem;
 }
 .link > a {
   background-color: white;
@@ -96,15 +96,5 @@ ul li.unkown::before {
 }
 ul li.no-eu::before {
   background-color: #c0c0c0;
-}
-</style>
-
-<style>
-a {
-  color: #1c4587;
-  text-decoration: none;
-}
-body {
-  word-wrap: break-word;
 }
 </style>

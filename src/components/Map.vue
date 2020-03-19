@@ -519,40 +519,47 @@
 
     <div class="popup" v-if="currentCountry">
       <a @click="currentCountry = null" class="close">&times;</a>
-      <h1>{{ currentCountry.name }}</h1>
+
+      <h1 v-if="currentCountry.name_nl">{{ currentCountry.name_nl }}</h1>
+      <h1 v-else-if="currentCountry.name">{{ currentCountry.name }}</h1>
+
       <p v-if="currentCountry.comment_nl">{{ currentCountry.comment_nl }}</p>
       <p v-else-if="currentCountry.comment_en">
         {{ currentCountry.comment_en }}
       </p>
       <p v-else-if="currentCountry.comment">{{ currentCountry.comment }}</p>
+
       <p v-if="currentCountry.link">
         <a :href="currentCountry.link" target="_blank">{{
           currentCountry.link
         }}</a>
       </p>
+
       <p v-if="currentCountry.link2">
         <a :href="currentCountry.link2" target="_blank">{{
           currentCountry.link2
         }}</a>
       </p>
     </div>
+
     <div class="popup why" v-else-if="welcome">
       <a @click="welcome = false" class="close">&times;</a>
-      <h1>Waarom nog niet?</h1>
+      <h1>Waarom nog geen lockdown?</h1>
       <p>
         Nederland heeft een populatie van 17 miljoen en er zijn nu
-        {{ netherlands.confirmed }}* corona gevallen.
+        {{ formatNumber(netherlands.confirmed) }}* corona gevallen.
       </p>
       <p>
         China, met een populatie 82 zo groot, 1.4 miljard, had 800 gevallen toen
-        ze in lockdown gingen en kwamen uit op 80000 gevallen.
+        ze in lockdown gingen en kwamen uit op
+        {{ formatNumber(80000) }} gevallen.
       </p>
       <p>
         Hoe denk je dat de Nederlandse ziekenhuizen omgaan met
-        {{ netherlands.confirmed * 100 }} patienten?
+        {{ formatNumber(netherlands.confirmed * 100) }} patienten?
       </p>
       <p class="footer">
-        * laatst geüpdatet op {{ format(netherlands.updated) }} –
+        * laatst geüpdatet op {{ formatDate(netherlands.updated) }} –
         <a
           href="https://www.endcoronavirus.org/?utm_source=waaromgeenlockdown.nl"
           target="_blank"
@@ -612,12 +619,16 @@ export default {
   },
 
   methods: {
-    format(timestamp) {
+    formatDate(timestamp) {
       return new Intl.DateTimeFormat("nl-NL", {
         year: "numeric",
         month: "long",
         day: "numeric"
       }).format(timestamp);
+    },
+
+    formatNumber(number) {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     },
 
     getCountry(code) {
@@ -676,21 +687,20 @@ g#gbplus:hover path {
 .popup {
   z-index: 1000;
   position: absolute;
-  bottom: 20%;
   width: 300px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  top: 1rem;
+  left: 1rem;
   max-width: 90%;
   box-shadow: 1px 1px 5px grey;
   background-color: white;
   border-radius: 5px;
-  text-align: center;
-  padding: 0 1rem;
+  padding: 0 2rem 1rem 2rem;
 }
 .popup.why {
+  background-color: #ea4335;
+  color: white;
   width: 400px;
-  top: 30%;
-  bottom: auto;
+  text-align: left;
 }
 .popup .close {
   position: absolute;

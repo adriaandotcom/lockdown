@@ -35,4 +35,14 @@ body {
 * {
   box-sizing: border-box;
 }
+a {
+  color: #1c4587;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body {
+  word-wrap: break-word;
+}
 </style>
