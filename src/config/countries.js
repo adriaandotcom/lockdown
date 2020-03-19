@@ -337,7 +337,8 @@ export default [
     lockdown: "mild",
     comment_en:
       "Lockdown of schools, bars, events. People are allowed to go to work.",
-    comment_nl: "People can still go to work. Scholen en events zijn afgelast.",
+    comment_nl:
+      "Mensen mogen nog naar het werk en winkels mogen open blijven. Scholen en events zijn afgelast.",
     start: "",
     end: "",
     link: "",
