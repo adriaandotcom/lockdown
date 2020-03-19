@@ -536,10 +536,35 @@
         }}</a>
       </p>
     </div>
+    <div class="popup why" v-else-if="welcome">
+      <a @click="welcome = false" class="close">&times;</a>
+      <h1>Waarom nog niet?</h1>
+      <p>
+        Nederland heeft een populatie van 17 miljoen en er zijn nu
+        {{ netherlands.confirmed }}* corona gevallen.
+      </p>
+      <p>
+        China, met een populatie 82 zo groot, 1.4 miljard, had 800 gevallen toen
+        ze in lockdown gingen en kwamen uit op 80000 gevallen.
+      </p>
+      <p>
+        Hoe denk je dat de Nederlandse ziekenhuizen omgaan met
+        {{ netherlands.confirmed * 100 }} patienten?
+      </p>
+      <p class="footer">
+        * laatst geüpdatet op {{ format(netherlands.updated) }} –
+        <a
+          href="https://www.endcoronavirus.org/?utm_source=waaromgeenlockdown.nl"
+          target="_blank"
+          >endcoronavirus.org</a
+        >
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 import { doc, outside } from "../config/constants";
 import countries from "../config/countries";
 
@@ -549,13 +574,37 @@ export default {
   data() {
     return {
       doc,
+      welcome: true,
       currentCountry: null,
       outside,
-      countries
+      countries,
+      netherlands: {
+        updated: 1584629586000,
+        confirmed: 2460
+      }
     };
   },
 
+  created() {
+    axios
+      .get(`https://corona.blloc.com/current?country=Netherlands`)
+      .then(response => {
+        this.netherlands = response && response.data ? response.data : {};
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  },
+
   methods: {
+    format(timestamp) {
+      return new Intl.DateTimeFormat("nl-NL", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }).format(timestamp);
+    },
+
     getCountry(code) {
       if (this.outside.includes(code)) return null;
 
@@ -623,11 +672,21 @@ g#gbplus:hover path {
   text-align: center;
   padding: 0 1rem;
 }
+.popup.why {
+  width: 400px;
+  top: 30%;
+  bottom: auto;
+}
 .popup .close {
   position: absolute;
   font-size: 16px;
   top: 3px;
   right: 8px;
   cursor: pointer;
+}
+.footer {
+  font-size: 12px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 </style>

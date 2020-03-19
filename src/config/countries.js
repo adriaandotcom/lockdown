@@ -111,7 +111,7 @@ export default [
     comment_en: "Need to carry form stating reason for leaving house",
     comment_nl:
       "Je hebt formulier nodig om aan te tonen waarom je op straat bent.",
-    start: "",
+    start: "17-03-2020",
     end: "",
     link:
       "https://www.businessinsider.com/coronavirus-france-requires-form-leave-house-walk-shopping-2020-3?r=US&IR=T",
@@ -222,12 +222,15 @@ export default [
   {
     country: "PL",
     name: "Poland",
-    lockdown: "unknown",
-    comment_en: "",
-    comment_nl: "",
-    start: "",
+    lockdown: "mild",
+    comment_en:
+      "Bars, restaurants, shopping centres and borders closed and all flights are cancelled",
+    comment_nl:
+      "Restaurants, cafes en winkelcentra gesloten. Alle vluchten geannuleerd.",
+    start: "13-03-2020",
     end: "",
-    link: "",
+    link:
+      "https://www.thefirstnews.com/article/poland-in-covid-19-lockdown-pm-orders-bars-restaurants-shopping-centres-and-borders-closed---and-cancels-all-flights-11142",
     link2: ""
   },
   {
