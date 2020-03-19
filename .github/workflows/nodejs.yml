@@ -45,8 +45,7 @@ jobs:
 
       - name: Build
         run: |
-          npm ci
-          npm install vue
+          npm install
           npm run build
         env:
           CI: true
