@@ -11,9 +11,10 @@
       </ul>
     </div>
     <div class="link">
-      <a :href="doc" target="_blank">Edit this data</a>
+      <a :href="doc" target="_blank">Bewerk gegevens</a>
       <p>
-        Made by <a href="https://www.instagram.com/swissjurriens/">Swiss</a> &
+        Gemaakt door
+        <a href="https://www.instagram.com/swissjurriens/">Swiss</a> &
         <a href="https://twitter.com/AdriaanvRossum" target="_blank">Adriaan</a>
       </p>
     </div>
