@@ -99,10 +99,11 @@ export default [
     country: "FR",
     name: "France",
     lockdown: "yes",
-    comment: "",
+    comment: "Need to carry form stating reason for leaving house",
     start: "",
     end: "",
-    link: "",
+    link:
+      "https://www.businessinsider.com/coronavirus-france-requires-form-leave-house-walk-shopping-2020-3?r=US&IR=T",
     link2: ""
   },
   {
@@ -272,7 +273,7 @@ export default [
   },
   {
     country: "GB",
-    name: "Great-Brittain",
+    name: "Great-Britain",
     lockdown: "no",
     comment: "",
     start: "",
@@ -293,9 +294,9 @@ export default [
   {
     country: "RS",
     name: "Serbia",
-    lockdown: "unknown",
-    comment: "",
-    start: "",
+    lockdown: "mild",
+    comment: "Emergency laws in place. Possible border lockdown",
+    start: "15-03-2020",
     end: "",
     link: "",
     link2: ""
@@ -314,11 +315,13 @@ export default [
   {
     country: "CH",
     name: "Switzerland",
-    lockdown: "unknown",
-    comment: "",
-    start: "",
-    end: "",
-    link: "",
+    lockdown: "mild",
+    comment:
+      "Restaurants, bars, non essential business closed. Borders checks in place.",
+    start: "16-03-2020",
+    end: "16-04-2020",
+    link:
+      "https://www.swissinfo.ch/eng/covid-19_switzerland-declares-coronavirus-crisis-an--extraordinary--situation/45620148",
     link2: ""
   }
 ];
