@@ -47,11 +47,26 @@ export default {
   bottom: 1.7rem;
   left: 1.7rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .legend {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
 .link {
   position: absolute;
   bottom: 1.3rem;
   right: 1.7rem;
 }
+@media only screen and (max-width: 800px) {
+  .link {
+    bottom: 0.5rem;
+    right: 1rem;
+  }
+}
+
 .link > a {
   background-color: white;
   border-radius: 5px;
