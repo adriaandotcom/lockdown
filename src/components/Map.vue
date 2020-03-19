@@ -717,7 +717,7 @@ export default {
         {
           country: "LU",
           name: "Luxembourg",
-          lockdown: "unknown",
+          lockdown: "mild",
           comment: "",
           start: "",
           end: "",
