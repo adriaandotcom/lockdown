@@ -562,7 +562,9 @@
 
       <p class="footer">
         * laatst geüpdatet op {{ formatDate(netherlands.updated) }}
-        <br />
+      </p>
+
+      <p class="footer">
         <a
           href="https://github.com/adhambadr/corona-api?utm_source=waaromgeenlockdown.nl"
           target="_blank"
@@ -573,6 +575,12 @@
           href="https://necsi.edu/eliminating-covid-19-a-community-based-analysis?utm_source=waaromgeenlockdown.nl"
           target="_blank"
           >paper</a
+        >
+        &middot;
+        <a
+          href="https://github.com/adriaanvanrossum/lockdown?utm_source=waaromgeenlockdown.nl"
+          target="_blank"
+          >app source</a
         >
         &middot;
         <a
@@ -726,7 +734,7 @@ g#gbplus:hover path {
 }
 .footer {
   font-size: 12px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 </style>
