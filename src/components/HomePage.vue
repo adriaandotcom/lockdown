@@ -13,7 +13,7 @@
     <div class="link">
       <a :href="doc" target="_blank">Edit this data</a>
       <p>
-        Made by <a href="">Swiss</a> &
+        Made by <a href="https://www.instagram.com/swissjurriens/">Swiss</a> &
         <a href="https://twitter.com/AdriaanvRossum" target="_blank">Adriaan</a>
       </p>
     </div>
