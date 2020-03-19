@@ -43,13 +43,18 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: build vue app
+      - name: Build
         run: |
           npm ci
-          npm install @vue/cli
+          npm install vue
           npm run build
-          mv dist docs
-          find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -f -k {} \;
         env:
           CI: true
           NODE_ENV: production
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
