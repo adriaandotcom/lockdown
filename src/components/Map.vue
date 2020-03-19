@@ -565,6 +565,7 @@
 
 <script>
 import axios from "axios";
+import csv2json from "csvjson-csv2json";
 import { doc, outside } from "../config/constants";
 import countries from "../config/countries";
 
@@ -586,6 +587,20 @@ export default {
   },
 
   created() {
+    axios
+      .get(
+        `https://docs.google.com/spreadsheets/d/e/2PACX-1vQxvNKULfvT_3ZJFyffVV9bCTzujAMmJl8RAZwvtrJQqKQDJdja7i5R2AU1fp43bOQCTHh8UUuoFfbX/pub?gid=0&single=true&output=csv`
+      )
+      .then(response => {
+        const csv = response && response.data ? response.data : null;
+        if (csv) {
+          this.countries = csv2json(csv, { parseNumbers: true });
+        }
+      })
+      .catch(e => {
+        console.error(e);
+      });
+
     axios
       .get(`https://corona.blloc.com/current?country=Netherlands`)
       .then(response => {

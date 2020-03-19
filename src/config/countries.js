@@ -131,6 +131,17 @@ export default [
       "https://uk.reuters.com/article/us-health-coronavirus-germany-economy/merkel-says-lets-get-through-this-as-shops-bars-and-churches-shut-idUKKBN213178"
   },
   {
+    country: "GB",
+    name: "Great-Britain",
+    lockdown: "no",
+    comment_en: "",
+    comment_nl: "",
+    start: "",
+    end: "",
+    link: "",
+    link2: ""
+  },
+  {
     country: "GR",
     name: "Greece",
     lockdown: "yes",
@@ -168,6 +179,17 @@ export default [
     country: "IT",
     name: "Italy",
     lockdown: "yes",
+    comment_en: "",
+    comment_nl: "",
+    start: "",
+    end: "",
+    link: "",
+    link2: ""
+  },
+  {
+    country: "Kosovo",
+    name: "Kosovo",
+    lockdown: "unknown",
     comment_en: "",
     comment_nl: "",
     start: "",
@@ -220,6 +242,19 @@ export default [
     link2: ""
   },
   {
+    country: "NO",
+    name: "Norway",
+    lockdown: "yes",
+    comment_en:
+      "Norway is locked down too. $2000 fine or 15days in jail for rule violation. People not allowed to go in their 2nd house",
+    comment_nl:
+      "$2000 boete of 15 dagen in de cel bij overtreding. Mensen mogen niet naar hus tweede huis.",
+    start: "",
+    end: "",
+    link: "",
+    link2: ""
+  },
+  {
     country: "PL",
     name: "Poland",
     lockdown: "mild",
@@ -252,6 +287,17 @@ export default [
     comment_en: "",
     comment_nl: "",
     start: "",
+    end: "",
+    link: "",
+    link2: ""
+  },
+  {
+    country: "RS",
+    name: "Serbia",
+    lockdown: "mild",
+    comment_en: "Emergency laws in place. Possible border lockdown",
+    comment_nl: "Noodplannen liggen klaar. Grenzen gaan mogelijk dicht.",
+    start: "15-03-2020",
     end: "",
     link: "",
     link2: ""
@@ -302,36 +348,17 @@ export default [
     link2: ""
   },
   {
-    country: "GB",
-    name: "Great-Britain",
-    lockdown: "no",
-    comment_en: "",
-    comment_nl: "",
-    start: "",
-    end: "",
-    link: "",
-    link2: ""
-  },
-  {
-    country: "Kosovo",
-    name: "Kosovo",
-    lockdown: "unknown",
-    comment_en: "",
-    comment_nl: "",
-    start: "",
-    end: "",
-    link: "",
-    link2: ""
-  },
-  {
-    country: "RS",
-    name: "Serbia",
+    country: "CH",
+    name: "Switzerland",
     lockdown: "mild",
-    comment_en: "Emergency laws in place. Possible border lockdown",
-    comment_nl: "Noodplannen liggen klaar. Grenzen gaan mogelijk dicht.",
-    start: "15-03-2020",
-    end: "",
-    link: "",
+    comment_en:
+      "Restaurants, bars, non essential business closed. Borders checks in place.",
+    comment_nl:
+      "Restaurants, barren en niet kritieke winkels zijn gesloten. Grenscontrole van kracht.",
+    start: "16-03-2020",
+    end: "16-04-2020",
+    link:
+      "https://www.swissinfo.ch/eng/covid-19_switzerland-declares-coronavirus-crisis-an--extraordinary--situation/45620148",
     link2: ""
   },
   {
@@ -345,20 +372,6 @@ export default [
     start: "",
     end: "",
     link: "",
-    link2: ""
-  },
-  {
-    country: "CH",
-    name: "Switzerland",
-    lockdown: "mild",
-    comment_en:
-      "Restaurants, bars, non essential business closed. Borders checks in place.",
-    comment_nl:
-      "Restaurants, barren en niet kritieke winkels zijn gesloten. Grenscontrole van kracht.",
-    start: "16-03-2020",
-    end: "16-04-2020",
-    link:
-      "https://www.swissinfo.ch/eng/covid-19_switzerland-declares-coronavirus-crisis-an--extraordinary--situation/45620148",
     link2: ""
   }
 ];
