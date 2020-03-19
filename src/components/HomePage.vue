@@ -11,11 +11,7 @@
       </ul>
     </div>
     <div class="link">
-      <a
-        href="https://docs.google.com/spreadsheets/d/19a0BXLEd136Ahv2ltESiR2cO1aKez8s6TOsW6uleJDg/edit"
-        target="_blank"
-        >Edit this data</a
-      >
+      <a :href="doc" target="_blank">Edit this data</a>
       <p>
         Made by <a href="">Swiss</a> &
         <a href="https://twitter.com/AdriaanvRossum" target="_blank">Adriaan</a>
@@ -26,9 +22,17 @@
 
 <script>
 import Map from "./Map.vue";
+import { doc } from "../config/constants";
 
 export default {
   name: "HomePage",
+
+  data() {
+    return {
+      doc
+    };
+  },
+
   components: {
     Map
   }
@@ -98,5 +102,10 @@ ul li.no-eu::before {
 a {
   color: #1c4587;
   text-decoration: none;
+}
+body {
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 </style>
