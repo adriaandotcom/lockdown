@@ -22,15 +22,15 @@ export default [
       "https://www.reuters.com/article/us-health-coronavirus-austria/austrian-province-of-tyrol-on-lockdown-idUSKBN2160WK",
     link2:
       "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Coronavirus---Aktuelle-Ma%C3%9Fnahmen.html",
-    new_death_daily_delta_percent: "-38%",
-    new_death_daily_delta_absolute: -3
+    new_death_daily_delta_percent: "-71%",
+    new_death_daily_delta_absolute: -5
   },
   {
     country: "BE",
     name_worldometers: "Belgium",
     name_en: "Belgium",
     name_nl: "België",
-    lockdown: "mild",
+    lockdown: "yes",
     impact_daily_life: "5. all non-essential shops closed",
     impact_daily_life_link: "",
     freedom_of_movement: "3. strong restrictions",
@@ -38,14 +38,15 @@ export default [
     border_policy: "2. light restrictions",
     border_policy_link: "",
     comment_en: "",
-    comment_nl: "",
+    comment_nl:
+      "De grenzen zijn dicht richting Nederland en Frankrijk. Alle zogeheten niet-essentiële verplaatsingen zijn verboden. Alleen Nederlanders die over de grens werken komen er nog in. Er is in België geen sprake van een echte lockdown zoals in Frankrijk of Spanje: Belgen mogen nog gewoon de straat op om een frisse neus te halen. De parken zijn open, wandelaars moeten gepaste afstand tot elkaar bewaren. Wel zijn in tegenstelling tot in Nederland alle niet-essentiële winkels dicht.",
     start: "Mar 18, 2020",
     end: "",
     link: "https://www.belgium.be/en/news/2020/coronavirus_reinforced_measures",
     link2:
       "https://www.belgium.be/nl/nieuws/2020/coronavirus_versterkte_maatregelen",
-    new_death_daily_delta_percent: "63%",
-    new_death_daily_delta_absolute: 5
+    new_death_daily_delta_percent: "65%",
+    new_death_daily_delta_absolute: 22
   },
   {
     country: "BG",
@@ -137,8 +138,8 @@ export default [
     end: "",
     link: "https://koronavirus.mzcr.cz/en/",
     link2: "",
-    new_death_daily_delta_percent: "",
-    new_death_daily_delta_absolute: ""
+    new_death_daily_delta_percent: "0%",
+    new_death_daily_delta_absolute: 0
   },
   {
     country: "DK",
@@ -159,8 +160,8 @@ export default [
     link:
       "https://politi.dk/en/coronavirus-in-denmark/17-march-2020-new-initiatives-to-prevent-the-spread-of-coronavirus-covid19",
     link2: "",
-    new_death_daily_delta_percent: "",
-    new_death_daily_delta_absolute: ""
+    new_death_daily_delta_percent: "-75%",
+    new_death_daily_delta_absolute: -6
   },
   {
     country: "EE",
@@ -224,8 +225,8 @@ export default [
     link:
       "https://www.businessinsider.com/coronavirus-france-requires-form-leave-house-walk-shopping-2020-3?r=US&IR=T",
     link2: "",
-    new_death_daily_delta_percent: "66%",
-    new_death_daily_delta_absolute: 74
+    new_death_daily_delta_percent: "",
+    new_death_daily_delta_absolute: ""
   },
   {
     country: "DE",
@@ -248,8 +249,8 @@ export default [
       "https://www.theguardian.com/world/2020/mar/18/coronavirus-lockdown-eu-belgium-germany-adopt-measures",
     link2:
       "https://uk.reuters.com/article/us-health-coronavirus-germany-economy/merkel-says-lets-get-through-this-as-shops-bars-and-churches-shut-idUKKBN213178",
-    new_death_daily_delta_percent: "190%",
-    new_death_daily_delta_absolute: 19
+    new_death_daily_delta_percent: "-39%",
+    new_death_daily_delta_absolute: -14
   },
   {
     country: "GB",
@@ -272,8 +273,8 @@ export default [
     end: "",
     link: "https://www.bbc.co.uk/news/uk-51981653",
     link2: "",
-    new_death_daily_delta_percent: "13%",
-    new_death_daily_delta_absolute: 6
+    new_death_daily_delta_percent: "-87%",
+    new_death_daily_delta_absolute: -76
   },
   {
     country: "GR",
@@ -294,8 +295,8 @@ export default [
     link:
       "https://www.tornosnews.gr/en/greek-news/society/39369-greece-in-total-lockdown-from-wednesday-due-to-coronavirus-outbreak.html",
     link2: "",
-    new_death_daily_delta_percent: "0%",
-    new_death_daily_delta_absolute: 0
+    new_death_daily_delta_percent: "",
+    new_death_daily_delta_absolute: ""
   },
   {
     country: "HU",
@@ -316,8 +317,8 @@ export default [
     end: "",
     link: "",
     link2: "",
-    new_death_daily_delta_percent: "-50%",
-    new_death_daily_delta_absolute: -1
+    new_death_daily_delta_percent: "0%",
+    new_death_daily_delta_absolute: 0
   },
   {
     country: "IE",
@@ -337,8 +338,8 @@ export default [
     end: "",
     link: "",
     link2: "",
-    new_death_daily_delta_percent: "100%",
-    new_death_daily_delta_absolute: 1
+    new_death_daily_delta_percent: "",
+    new_death_daily_delta_absolute: ""
   },
   {
     country: "IT",
@@ -362,8 +363,8 @@ export default [
     link:
       "https://www.cnbc.com/2020/03/19/italys-death-rate-reaches-record-high-hospitals-in-lombardy-struggle.html",
     link2: "",
-    new_death_daily_delta_percent: "-8%",
-    new_death_daily_delta_absolute: -50
+    new_death_daily_delta_percent: "",
+    new_death_daily_delta_absolute: ""
   },
   {
     country: "Kosovo",
@@ -427,8 +428,8 @@ export default [
     end: "",
     link: "",
     link2: "",
-    new_death_daily_delta_percent: "",
-    new_death_daily_delta_absolute: ""
+    new_death_daily_delta_percent: "100%",
+    new_death_daily_delta_absolute: 1
   },
   {
     country: "LU",
@@ -496,8 +497,8 @@ export default [
     link:
       "https://www.fhi.no/en/op/novel-coronavirus-facts-advice/facts-and-general-advice/advice-and-information-to-public/",
     link2: "",
-    new_death_daily_delta_percent: "",
-    new_death_daily_delta_absolute: ""
+    new_death_daily_delta_percent: "0%",
+    new_death_daily_delta_absolute: 0
   },
   {
     country: "PL",
@@ -520,8 +521,8 @@ export default [
     link:
       "https://www.thefirstnews.com/article/poland-in-covid-19-lockdown-pm-orders-bars-restaurants-shopping-centres-and-borders-closed---and-cancels-all-flights-11142",
     link2: "",
-    new_death_daily_delta_percent: "-50%",
-    new_death_daily_delta_absolute: -1
+    new_death_daily_delta_percent: "50%",
+    new_death_daily_delta_absolute: 1
   },
   {
     country: "PT",
@@ -543,8 +544,8 @@ export default [
     link:
       "https://www.euractiv.com/section/politics/news/portuguese-president-on-lockdown-as-coronavirus-spreads-across-eu/",
     link2: "",
-    new_death_daily_delta_percent: "350%",
-    new_death_daily_delta_absolute: 7
+    new_death_daily_delta_percent: "0%",
+    new_death_daily_delta_absolute: 0
   },
   {
     country: "RO",
@@ -564,8 +565,8 @@ export default [
     end: "",
     link: "",
     link2: "",
-    new_death_daily_delta_percent: "33%",
-    new_death_daily_delta_absolute: 1
+    new_death_daily_delta_percent: "-80%",
+    new_death_daily_delta_absolute: -4
   },
   {
     country: "RS",
@@ -586,8 +587,8 @@ export default [
     end: "",
     link: "",
     link2: "",
-    new_death_daily_delta_percent: "0%",
-    new_death_daily_delta_absolute: 0
+    new_death_daily_delta_percent: "",
+    new_death_daily_delta_absolute: ""
   },
   {
     country: "SK",
@@ -654,8 +655,8 @@ export default [
     link:
       "https://www.theguardian.com/world/2020/mar/15/spain-city-streets-turn-quiet-coronavirus-lockdown-madrid-barcelona",
     link2: "",
-    new_death_daily_delta_percent: "38%",
-    new_death_daily_delta_absolute: 148
+    new_death_daily_delta_percent: "-35%",
+    new_death_daily_delta_absolute: -237
   },
   {
     country: "SE",
@@ -677,8 +678,8 @@ export default [
     end: "",
     link: "",
     link2: "",
-    new_death_daily_delta_percent: "300%",
-    new_death_daily_delta_absolute: 3
+    new_death_daily_delta_percent: "-69%",
+    new_death_daily_delta_absolute: -9
   },
   {
     country: "CH",
@@ -703,15 +704,15 @@ export default [
       "https://www.swissinfo.ch/eng/covid-19_switzerland-declares-coronavirus-crisis-an--extraordinary--situation/45620148",
     link2:
       "https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international.html",
-    new_death_daily_delta_percent: "22%",
-    new_death_daily_delta_absolute: 4
+    new_death_daily_delta_percent: "1250%",
+    new_death_daily_delta_absolute: 25
   },
   {
     country: "NL",
     name_worldometers: "Netherlands",
     name_en: "Netherlands",
     name_nl: "Nederland",
-    lockdown: "mild",
+    lockdown: "yes",
     impact_daily_life: "4. take away food delivery only",
     impact_daily_life_link:
       "https://www.rijksoverheid.nl/actueel/nieuws/2020/03/15/aanvullende-maatregelen-onderwijs-horeca-sport",
@@ -724,13 +725,13 @@ export default [
     comment_en:
       "Lockdown of schools, bars, events. People are allowed to go to work.",
     comment_nl:
-      "Mensen mogen nog naar het werk en winkels mogen open blijven. Scholen en events zijn afgelast.",
+      "Alle bijeenkomsten zijn tot 1 juni verboden, ook die met minder dan honderd mensen. Verder gaat de politie boetes uitdelen als mensen zich in de buitenlucht of in winkels niet aan de regel houden om minstens 1,5 meter afstand te houden.",
     start: "",
     end: "",
     link:
       "https://nos.nl/artikel/2328121-coronanieuws-23-maart-kabinet-verstevigt-coronamaatregelen.html",
     link2: "",
-    new_death_daily_delta_percent: "-21%",
-    new_death_daily_delta_absolute: -9
+    new_death_daily_delta_percent: "27%",
+    new_death_daily_delta_absolute: 17
   }
 ];
